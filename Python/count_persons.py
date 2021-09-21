@@ -103,12 +103,15 @@ def humanDetector(args):
     writer = None
     if camera:
         print('[INFO] Opening Web Cam.')
+        print('[INFO] Press Ctrl-C to stop.')
         detectByCamera(writer)
     elif video_path is not None:
         print('[INFO] Opening Video from path.')
+        print('[INFO] Press Ctrl-C to stop.')
         detectByPathVideo(video_path, writer)
     elif image_path is not None:
         print('[INFO] Opening Image from path.')
+        print('[INFO] Press Ctrl-C to stop.')
         detectByPathImage(image_path)
 
 
@@ -126,7 +129,10 @@ def argsParser():
 
 
 if __name__ == "__main__":
-    HOGCV = cv2.HOGDescriptor()
-    HOGCV.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
-    args = argsParser()
-    humanDetector(args)
+    try:
+        HOGCV = cv2.HOGDescriptor()
+        HOGCV.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
+        args = argsParser()
+        humanDetector(args)
+    except KeyboardInterrupt:
+        sys.exit("[INFO] User Requested An Interrupt.\n[INFO] Quitting...")
