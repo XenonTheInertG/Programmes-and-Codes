@@ -1,0 +1,20 @@
+{
+    // My ~/config/Code/User/settings.json file
+    "workbench.colorTheme": "Night Owl",
+    "editor.fontSize": 16,
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "editor.fontWeight": "bold",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.fontWeight": "bold",
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }",
+    "editor.formatOnType": true,
+    "code-runner.runInTerminal": true,
+    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": true,
+    "explorer.confirmDragAndDrop": false,
+    "C_Cpp.vcFormat.space.withinSquareBrackets": true,
+    "C_Cpp.vcFormat.space.withinLambdaBrackets": true
+}

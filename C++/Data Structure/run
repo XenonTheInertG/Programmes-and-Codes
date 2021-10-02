@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+clear
+g++ -fno-stack-protector $1 -o ran.o
+chmod +x ran.o
+./ran.o
