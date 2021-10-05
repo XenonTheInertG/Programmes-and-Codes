@@ -1,0 +1,10 @@
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\bin\Debug\Bird Shooter.exe.config
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\bin\Debug\Bird Shooter.exe
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\bin\Debug\Bird Shooter.pdb
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird Shooter.csprojAssemblyReference.cache
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird_Shooter.MainFrame.resources
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird_Shooter.Properties.Resources.resources
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird Shooter.csproj.GenerateResource.cache
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird Shooter.csproj.CoreCompileInputs.cache
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird Shooter.exe
+D:\work\asp.net C#\Csharp-projects-main\Bird Shooter\obj\Debug\Bird Shooter.pdb
