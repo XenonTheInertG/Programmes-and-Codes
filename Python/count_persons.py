@@ -46,17 +46,16 @@ def detectByPathVideo(path, writer):
         # check is True if reading was successful
         check, frame = video.read()
 
-        if check:
-            frame = imutils.resize(frame, width=min(800, frame.shape[1]))
-            frame = detect(frame)
+        if not check:
+            break
+        frame = imutils.resize(frame, width=min(800, frame.shape[1]))
+        frame = detect(frame)
 
-            if writer is not None:
-                writer.write(frame)
+        if writer is not None:
+            writer.write(frame)
 
-            key = cv2.waitKey(1)
-            if key == ord('q'):
-                break
-        else:
+        key = cv2.waitKey(1)
+        if key == ord('q'):
             break
     video.release()
     cv2.destroyAllWindows()
@@ -95,10 +94,8 @@ def detectByPathImage(path):
 def humanDetector(args):
     image_path = args["image"]
     video_path = args['video']
-    camera = str(args["camera"]) == 'true'
-
     writer = None
-    if camera:
+    if camera := str(args["camera"]) == 'true':
         print('[INFO] Opening Web Cam.')
         print('[INFO] Press Ctrl-C to stop.')
         detectByCamera(writer)
@@ -120,9 +117,7 @@ def argsParser():
                            help="path to Image File ")
     arg_parse.add_argument("-c", "--camera", default=False,
                            help="Set true if you want to use the camera.")
-    args = vars(arg_parse.parse_args())
-
-    return args
+    return vars(arg_parse.parse_args())
 
 
 if __name__ == "__main__":
